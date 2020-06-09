@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <span class="text-muted count-quiz"><span id="quizCount">1</span>/3</span>
+
+    <section class="quiz-section" id="quizOne">
+        <h1>Вопрос 1?</h1>
+        <div class="btn-group mt-3">
+            <button class="btn btn-outline-secondary quiz-one-btn success">Верно</button>
+            <button class="btn btn-outline-secondary quiz-one-btn">Неверно</button>
+            <button class="btn btn-outline-secondary quiz-one-btn">Неверно</button>
+        </div>
+    </section>
+    <section class="quiz-section hidden" id="quizTwo">
+        <h1>Вопрос 2?</h1>
+        <div class="btn-group mt-3">
+            <button class="btn btn-outline-secondary quiz-two-btn">Неверно</button>
+            <button class="btn btn-outline-secondary quiz-two-btn">Неверно</button>
+            <button class="btn btn-outline-secondary quiz-two-btn success">Верно</button>
+        </div>
+    </section>
+    <section class="quiz-section hidden" id="quizThree">
+        <h1>Вопрос 3?</h1>
+        <div class="btn-group mt-3">
+            <button class="btn btn-outline-secondary quiz-three-btn">Неверно</button>
+            <button class="btn btn-outline-secondary quiz-three-btn success">Верно</button>
+            <button class="btn btn-outline-secondary quiz-three-btn">Неверно</button>
+        </div>
+    </section>
+    <section class="quiz-section hidden" id="quizEnd">
+        <h1>Результаты</h1>
+        <div class="block-inline mt-3">
+            <span class="alert alert-info mr-3">Вы ответили на <span id="successCountText">0</span> из 3 вопросов</span>
+            <button class="btn btn-outline-info" onclick="location.reload()">Пройти снова</button>
+        </div>
+    </section>
+    
+    <div id="glass"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

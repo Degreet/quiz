@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+
+section.quiz-section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+section.quiz-section h1 {
+    max-width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    section.quiz-section h1 {
+        max-width: 70%;
+        font-size: 40px;
+    }
+}
+
+section.quiz-section .btns {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.block-inline {
+    display: inline;
+}
+
+#glass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#glass.active {
+    z-index: 11111;
+}
+
+.count-quiz {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    font-size: 40px;
+    opacity: .3;
+}
